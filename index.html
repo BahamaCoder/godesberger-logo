@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="GODESBERGER Kfz-Meisterwerkstatt GmbH – Ehrlich. Kompetent. Godesberg. Ihre Kfz-Meisterwerkstatt in Bonn-Bad Godesberg.">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='15' fill='%231a1a2e'/><text y='.9em' font-size='80' x='10'>&#9881;</text></svg>">
+    <!-- ✅ Logo vorab laden – minimiert Verzögerung -->
+    <link rel="preload" as="image" href="https://raw.githubusercontent.com/BahamaCoder/godesberger-logo/4d49a6e7c8fcab1478671f0309ad62a0526b69af/2026%20GKM-Logo_.png" fetchpriority="high">
     <meta name="robots" content="index, follow">
     <script type="application/ld+json">
     {
@@ -117,7 +119,13 @@
 <body>
 
 <header id="header-start">
-    <img src="https://raw.githubusercontent.com/BahamaCoder/godesberger-logo/4d49a6e7c8fcab1478671f0309ad62a0526b69af/2026%20GKM-Logo_.png" alt="GODESBERGER Kfz-Meisterwerkstatt GmbH Logo">
+    <!-- ✅ fetchpriority="high" – Browser lädt Logo mit höchster Priorität -->
+    <img
+        src="https://raw.githubusercontent.com/BahamaCoder/godesberger-logo/4d49a6e7c8fcab1478671f0309ad62a0526b69af/2026%20GKM-Logo_.png"
+        alt="GODESBERGER Kfz-Meisterwerkstatt GmbH Logo"
+        fetchpriority="high"
+        width="380"
+        height="auto">
     <h1>GODESBERGER Kfz-Meisterwerkstatt GmbH</h1>
     <p class="tagline">Ehrlich. Kompetent. Godesberg.</p>
     <a href="#block-anfrage" class="header-cta">Jetzt Anfrage stellen &#8594;</a>
@@ -127,31 +135,26 @@
 <section id="block-usp" style="background:#1a1a2e;padding:40px 1.5rem;">
     <div style="max-width:1000px;margin:0 auto;">
         <div style="display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:center;text-align:center;">
-
             <div style="flex:1 1 180px;padding:1.2rem;">
                 <div style="font-size:2.2rem;margin-bottom:0.5rem;">&#11088;</div>
                 <div style="font-size:2rem;font-weight:700;color:#e74c3c;">4,7 / 5</div>
                 <div style="color:#aaa;font-size:0.85rem;margin-top:0.3rem;">97 Google-Bewertungen</div>
             </div>
-
             <div style="flex:1 1 180px;padding:1.2rem;border-left:1px solid #333;border-right:1px solid #333;">
                 <div style="font-size:2.2rem;margin-bottom:0.5rem;">&#127942;</div>
                 <div style="font-size:1.1rem;font-weight:700;color:white;">Meisterbetrieb</div>
                 <div style="color:#aaa;font-size:0.85rem;margin-top:0.3rem;">Geprüfte Qualität &amp; Fachkompetenz</div>
             </div>
-
             <div style="flex:1 1 180px;padding:1.2rem;border-right:1px solid #333;">
                 <div style="font-size:2.2rem;margin-bottom:0.5rem;">&#128205;</div>
                 <div style="font-size:1.1rem;font-weight:700;color:white;">Bekannt in Godesberg</div>
                 <div style="color:#aaa;font-size:0.85rem;margin-top:0.3rem;">Gut vernetzt – regional verwurzelt</div>
             </div>
-
             <div style="flex:1 1 180px;padding:1.2rem;">
                 <div style="font-size:2.2rem;margin-bottom:0.5rem;">&#128591;</div>
                 <div style="font-size:1.1rem;font-weight:700;color:white;">Persönliche Beratung</div>
                 <div style="color:#aaa;font-size:0.85rem;margin-top:0.3rem;">Ehrlich, direkt &amp; auf Augenhöhe</div>
             </div>
-
         </div>
     </div>
 </section>
@@ -235,7 +238,7 @@
             </div>
             <div class="contact-map">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.5!2d7.1547!3d50.6882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bee40a8fb38eeb%3A0xddc00577e9039419!2sSankt-Augustinus-Stra%C3%9Fe%2080%2C%2053175%20Bonn!5e0!3m2!1sde!2sde!4v1711234567890!5m2!1sde!2sde"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1263.768811546102!2d7.144295056938391!3d50.69140712003494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6df5549840155f71%3A0x59faa4a8f1243a9c!2sGODESBERGER%20Kfz-Meisterwerkstatt%20GmbH!5e0!3m2!1sen!2sde!4v1775210148878!5m2!1sen!2sde"
                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                     title="Standort GODESBERGER Kfz-Meisterwerkstatt">
                 </iframe>
@@ -341,10 +344,8 @@
     </p>
 </footer>
 
-<!-- IMPRESSUM & DATENSCHUTZ – aufklappbar -->
 <div style="background:#1a1a2e;padding:2rem 1.5rem;">
     <div style="max-width:1000px;margin:0 auto;font-size:0.78rem;color:#888;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
-
         <details id="block-impressum" style="margin-bottom:0.8rem;">
             <summary style="cursor:pointer;font-weight:700;color:#aaa;letter-spacing:1px;text-transform:uppercase;font-size:0.78rem;list-style:none;display:flex;align-items:center;gap:0.5rem;">
                 &#9656; Impressum
@@ -367,9 +368,7 @@
                 <p>Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
             </div>
         </details>
-
         <div style="border-top:1px solid #333;margin:0.5rem 0;"></div>
-
         <details id="block-datenschutz" style="margin-top:0.8rem;">
             <summary style="cursor:pointer;font-weight:700;color:#aaa;letter-spacing:1px;text-transform:uppercase;font-size:0.78rem;list-style:none;display:flex;align-items:center;gap:0.5rem;">
                 &#9656; Datenschutzerklärung
@@ -392,7 +391,6 @@
                 <p>Zuständige Aufsichtsbehörde: Landesbeauftragte für Datenschutz und Informationsfreiheit NRW, Postfach 20 04 44, 40102 Düsseldorf.</p>
             </div>
         </details>
-
     </div>
 </div>
 
